@@ -5,7 +5,7 @@ body{
 }
 
 button{
-    margin: 5px;
+    margin: 5px 0;
     width: 160px;
     height: 60px;
     font-size: 1.1em;
@@ -13,8 +13,10 @@ button{
 
 #saida{
     line-height: 30px;
+    margin: 10px 0;
 }
 
 #saida2{
     line-height: 30px;
+    font-size: 1.1em
 }

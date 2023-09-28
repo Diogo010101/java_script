@@ -8,10 +8,10 @@ function reajusteSalario(){
     var objSaida2 = document.querySelector('#saida2');
 
     objSaida.style.fontWeight = 'bold';
-    objSaida.style.fontsize = '2em';
+    objSaida.style.fontSize = '2em';
     objSaida.innerHTML = `${nome.toUpperCase()} recebeu um aumento salarial!`
-    objSaida2.innerHTML = `Salario antes do ajuste ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>
-    Valor do ajuste ${valorAjuste.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) }<br>
+    objSaida2.innerHTML = `Salario antes do ajuste: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>
+    Valor do ajuste: ${valorAjuste.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) }, que corresponde a ${porcentagem}%<br>
     Novo salário: ${novoSalario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) }`
 
 }
