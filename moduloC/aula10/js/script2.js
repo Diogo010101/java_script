@@ -3,9 +3,11 @@
 function somar(){
     var objnumero1 = document.getElementById('number1');
     numero1 = Number(objnumero1.value);
+    console.log(numero1)
 
     var objnumero2 = document.getElementById('number2')
     numero2 = Number(objnumero2.value);
+    console.log(numero2)
 
     var outPut = document.getElementById('saida')
 

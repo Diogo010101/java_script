@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema verifica as notas dos 5 bimetres, gera uma média e informa se o aluno foi ou não aprovado">
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/01codicoes.js"></script>
+    <title>Média de aprovação</title>
+    <main>
+        <h1>Calculadora de média</h1>
+        <div>
+            <label for="idnome">Nome do aluno</label>
+            <input type="text" name="nome" id="idnome">
+        </div>
+
+        <div>
+            <label for="idnota1">Nota1:</label>
+            <input type="number" name="nota1" id="idnota1" min="0" max="10">
+        </div>
+
+        <div>
+            <label for="idnota2">Nota2:</label>
+            <input type="number" name="nota2" id="idnota2" min="0" max="10">
+        </div>
+
+        <div>
+            <label for="idnota3">Nota3:</label>
+            <input type="number" name="nota3" id="idnota3" min="0" max="10">
+        </div>
+
+        <div>
+            <label for="idnota4">Nota4:</label>
+            <input type="number" name="nota4" id="idnota4" min="0" max="10">
+        </div>
+
+        <div>
+            <label for="idnota5">Nota5:</label>
+            <input type="number" name="nota5" id="idnota5" min="0" max="10">
+        </div>
+
+        <div><button id="botao" onclick="media(idnome, idnota1, idnota2, idnota3, idnota4, idnota5, saida)">Calcular</button></div>
+        <div id="saida"></div>
+
+    </main>
+
+</head>
+<body>
+    
+</body>
+</html>
