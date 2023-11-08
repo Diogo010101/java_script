@@ -57,5 +57,6 @@ input{
 #saida{
     background-color: white;
     padding: 5px;
+    display: none;
 
 }
