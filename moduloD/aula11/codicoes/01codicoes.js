@@ -1,17 +1,4 @@
 
-function corretor(valor){
-    var nota = valor.value
-    console.log(nota)
-    if(nota < 0 || nota > 10){
-        nota = 1
-    }
-
-}
-
-
-
-
-
 
 function media(nome, b1, b2, b3, b4, b5, saida){
     objNome = nome.value;
