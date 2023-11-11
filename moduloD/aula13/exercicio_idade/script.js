@@ -4,7 +4,7 @@ let objSaida = document.querySelector("#saida");
 let objImg = document.querySelector("#imagem");
 let objAnoNascimento = document.querySelector("#idnascimento");
 let sexo = document.getElementsByName("sexo");
-let nascimento = Number(objAnoNascimento)
+
 
 
 
