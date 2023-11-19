@@ -1,5 +1,29 @@
+//Usando função anonima + concatenação de string + função dentro de variavel
+
+const tecla = document.querySelectorAll(".tecla");
+
+function tocaSom(idAudio) {
+    document.querySelector(idAudio).play();
+
+}
+
+let i = 0
+
+for (i; i <= tecla.length; i++) {
+
+    let instrumento = tecla[i].classList[1];
+    let som = `#som_${instrumento}`
+    tecla[i].onclick = function () {
+        tocaSom(som);
+    }
+}
 
 
+
+
+
+// Usando addEventListener
+/*
 const tecla = document.querySelectorAll(".tecla");
 
 
@@ -7,7 +31,7 @@ for(let i = 0; i <= tecla.length; i++){
     tecla[i].addEventListener("click", function tocar(){
         document.querySelectorAll(".som")[i].play();
     })
-}
+}*/
 
 
 
