@@ -1,22 +1,51 @@
 //Usando função anonima + concatenação de string + função dentro de variavel
 
-const tecla = document.querySelectorAll(".tecla");
+const listaTecla = document.querySelectorAll(".tecla");
 
-function tocaSom(idAudio) {
-    document.querySelector(idAudio).play();
-
+function tocaSom(elementoAudio) {
+    const elemento = document.querySelector(elementoAudio);
+    
+    if (elemento != null && elemento.localName === 'audio' ){
+        elemento.play()
+    } else{
+        console.log('Elemento Nulo ou Inválido')
+    }
+    
 }
+
 
 let i = 0
 
-for (i; i <= tecla.length; i++) {
+for (i; i < listaTecla.length; i++) {
 
-    let instrumento = tecla[i].classList[1];
-    let som = `#som_${instrumento}`
-    tecla[i].onclick = function () {
+    const tecla = listaTecla[i];
+    const instrumento = tecla.classList[1];
+    const som = `#som_${instrumento}`
+    tecla.onclick = function () {
         tocaSom(som);
     }
+
+    tecla.onkeypress = function (evento) {
+        if (evento.code == 'Enter' || evento.code == 'NumpadEnter'){
+            tocaSom(som);
+            tecla.classList.add('ativa');
+        }else{
+            window.alert('Pressione a tecla Enter para tocar')
+        }
+    }
+
+    tecla.onkeyup = function (){
+        tecla.classList.remove('ativa');
+    }
+
+
+
+    
+    
+
+    
 }
+
 
 
 
